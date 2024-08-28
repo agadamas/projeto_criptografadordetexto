@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia de Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Criptografia de Textos</h1>
+
+        <textarea id="inputText" placeholder="Digite seu texto aqui..." rows="4" cols="50"></textarea><br><br>
+        
+        <!-- Campo para escolher entre Criptografar e Descriptografar -->
+        <select id="actionSelect">
+            <option value="criptografar">Criptografar</option>
+            <option value="descriptografar">Descriptografar</option>
+        </select><br><br>
+        
+        <!-- Botão para executar a ação escolhida -->
+        <button onclick="executarAcao()">Executar</button>
+        
+        <!-- Campo para exibir o resultado -->
+        <textarea id="outputText" placeholder="Resultado..." rows="4" cols="50" readonly></textarea><br><br>
+
+        <!-- Botão para copiar o resultado -->
+        <button onclick="copiarTexto()">Copiar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
